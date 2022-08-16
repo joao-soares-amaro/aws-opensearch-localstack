@@ -1,0 +1,25 @@
+version: '3.3'
+
+services:
+  aws-opensearch-localstack:
+    container_name: aws-opensearch-localstack
+    build:
+      context: .
+      dockerfile: ../../Dockerfile
+    image: aws-opensearch-localstack
+    environment:
+      - DD_AGENT_HOST
+      - DD_TRACE_AGENT_PORT
+      - AWS_FIREHOSE_CLIENT_ID
+      - AWS_FIREHOSE_CLIENT_SECRET
+    ports:
+      - "8080:8080"
+      - "443:443"
+    networks:
+      - aws-opensearch-localstack-network
+
+networks:
+  aws-opensearch-localstack-network:
+    driver: bridge
+    ipam:
+      driver: default
