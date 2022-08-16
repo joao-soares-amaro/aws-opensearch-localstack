@@ -15,7 +15,7 @@ _Reference: [LocalStack awslocal limitations](https://github.com/localstack/awsc
 pip install awscli-local[ver1]
 ```
 
-Now download `docker-compose.yml`, open terminal at the same folder as the file and run the following command
+Now download `docker-compose.yml`, open terminal at the root of the project and run the following command
 _Reference: [LocalStack install OpenSearch](https://docs.localstack.cloud/aws/opensearch/)_
 
 ```console
