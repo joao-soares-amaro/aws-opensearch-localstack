@@ -59,7 +59,7 @@ class SearchController(
 }
 ```
 
-Now you can GET [http://localhost:8080/hello/search](http://localhost:8080/hello/search)
+Now you can GET [http://localhost:8080/search](http://localhost:8080/search)
 
 or
 
